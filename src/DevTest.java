@@ -27,6 +27,7 @@ public class DevTest
           //  System.out.println("That's a shame.");
         //String likesPupies = getRegExString(in, "Do you like puppies? [Y/N]", "[YyNn]");
         //System.out.println("You said: " + likesPupies);
+        //prettyHeader(" Message Centered Here");
     }
 
     /**
@@ -209,5 +210,24 @@ public class DevTest
         } while (!done);
         return regString;
     }
-     */
+
+    public static void prettyHeader(String msg)
+    {
+        for(int i = 0; i < 60; i++)
+        {
+            System.out.print("*");
+        }
+        System.out.print("\n***");
+        for(int i = 0; i < (54/2 - msg.length()/2); i++)
+            System.out.print(" ");
+        System.out.print(msg);
+        for(int i = 0; i < (54/2 - msg.length()/2); i++)
+            System.out.print(" ");
+        System.out.print("***\n");
+        for(int i = 0; i < 60; i++)
+        {
+            System.out.print("*");
+        }
+    }
+    */
 }
